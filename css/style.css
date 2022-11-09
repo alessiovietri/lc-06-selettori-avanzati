@@ -3,3 +3,110 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    padding-bottom: 200px;
+}
+
+h1#main-title.styling-h1.text-red {
+    font-style: italic;
+    color: red;
+    text-decoration: underline;
+}
+
+[attrib] {
+    color:red;
+    font-size: 4em;
+}
+
+.hover-class:hover {
+    color: yellow;
+    background-color: blue;
+    cursor: pointer;
+}
+
+input:focus {
+    color: green;
+}
+
+button:active {
+    background-color: purple;
+    font-size: 5em;
+}
+
+a:visited {
+    color: aqua;
+    font-size: 3em;
+}
+
+ul li:first-child {
+    color: brown;
+}
+
+ul li:nth-child(3) {
+    font-style: oblique;
+}
+
+ul li:last-child {
+    color: pink;
+}
+
+.class1 .class2 {
+    text-decoration: line-through;
+}
+
+.class1 > .class2 {
+    text-decoration: underline;
+}
+
+h2, h3 {
+    padding: 50px;
+}
+
+#TEMP p + p,      /* SELEZIONA TUTTI I P FRATELLI ADIACENTI DI UN ALTRO P */
+#TEMP div + p     /* SELEZIONA TUTTI I P FRATELLI ADIACENTI DI UN DIV */
+{
+    color: lightcoral;
+    font-size: 46px;
+}
+
+#TEMP p + p,      /* SELEZIONA TUTTI I P FRATELLI ADIACENTI DI UN ALTRO P */
+#TEMP div     /* SELEZIONA TUTTI I DIV */
+{
+    color: lightcoral;
+    font-size: 46px;
+}
+
+p ~ p {
+    color: lightcoral;
+    font-size: 46px;
+}
+
+#special-hover > div:first-child {
+    height: 150px;
+    background-color: aquamarine;
+}
+
+#special-hover > div:last-child {
+    height: 250px;
+    background-color: blue;
+}
+
+#special-hover > div:first-child:hover + div {
+    /* background-color: yellowgreen; */
+    display: none;
+}
+
+[title*="flower"]{
+    color: blueviolet;
+}
+
+#special-div p:last-of-type {
+    font-size: 6em;
+    color: red;
+}
+
+#special-div p:last-child {
+    font-size: 6em;
+    color: green;
+}
